@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>मावळा प्रतिष्ठान, कोठारा</title>
+  <meta name="description" content="मावळा प्रतिष्ठान, कोठारा — समाजकार्य, संस्कृती आणि एकतेसाठी कार्यरत." />
+  <meta property="og:title" content="मावळा प्रतिष्ठान, कोठारा" />
+  <meta property="og:description" content="समाजकार्य, संस्कृती आणि एकतेसाठी कार्यरत." />
+  <meta name="theme-color" content="#ff6a00" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f11; --card:#15161a; --muted:#a6a7ab; --brand:#ff6a00; --brand2:#ffb703; --ring:rgba(255,149,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family:"Noto Sans Devanagari","Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:#e9eaee; background:radial-gradient(1200px 600px at 80% -10%, rgba(255,183,3,.12), transparent 60%), linear-gradient(180deg,#0d0e10, #0b0c0f 40%, #0f0f11);}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin-inline:auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(10px); background:rgba(10,10,12,.6); border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px}
+    .logo1{width:40px; height:40px; display:grid; place-items:center; border-radius:12px; background:conic-gradient(from 210deg, var(--brand), var(--brand2)); box-shadow:0 6px 30px rgba(255,149,0,.25)}
+     .logo2{width:400px; height:400px; display:grid; place-items:center; border-radius:12px; background:conic-gradient(from 210deg, var(--brand), var(--brand2)); box-shadow:0 6px 30px rgba(255,149,0,.25)}
+    .navlinks{display:flex; gap:18px; font-weight:600; color:#d7d8dc}
+    .navlinks a{opacity:.9}
+    .navlinks a:hover{opacity:1; color:#fff}
+
+    .hero{position:relative; padding:90px 0 70px;}
+    .hero .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:28px}
+    .title{font-size:clamp(28px, 3.6vw, 48px); font-weight:800; line-height:1.05}
+    .subtitle{margin-top:12px; color:var(--muted); font-size:clamp(14px,1.6vw,18px)}
+    .cta{margin-top:22px; display:flex; gap:12px; flex-wrap:wrap}
+    .btn{padding:12px 18px; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:#18191e; color:#fff; font-weight:700; transition:transform .06s ease, box-shadow .2s}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 10px 30px var(--ring)}
+    .btn.brand{background:linear-gradient(135deg, var(--brand), var(--brand2)); border-color:transparent; color:#111}
+
+    .card{background:linear-gradient(180deg,#15161a,#101116); border:1px solid rgba(255,255,255,.06); border-radius:20px; padding:18px}
+    .section{padding:72px 0}
+    h2{font-size:clamp(22px,2.8vw,34px); margin:0 0 12px}
+    p.lead{color:#cfd0d5}
+
+    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .feat{padding:16px; border-radius:16px; background:#14151a; border:1px solid rgba(255,255,255,.06)}
+    .feat h3{margin:8px 0 6px}
+    .muted{color:var(--muted)}
+
+    .events{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .event{overflow:hidden}
+    .event .img{height:160px; border-radius:14px; background:linear-gradient(135deg, rgba(255,106,0,.28), rgba(255,183,3,.22)); display:grid; place-items:center; font-weight:800}
+
+    .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+    .socials{display:flex; gap:10px; flex-wrap:wrap}
+    .chip{padding:9px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:#15161a}
+.ph{
+  width:100%;
+  max-width:200px;  /* इथे साईज adjust कर */
+  height:auto;
+  border-radius:12px;
+  object-fit:cover;
+  display:block;
+  margin:auto;
+}
+
+    @media (max-width: 900px){
+      .hero .grid, .donate{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr 1fr}
+      .events{grid-template-columns:1fr 1fr}
+      .gallery{grid-template-columns:1fr 1fr 1fr}
+    }
+    @media (max-width: 580px){
+      .navlinks{display:none}
+      .features{grid-template-columns:1fr}
+      .events{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="logo.jpg" alt="logo" class="logo1">
+        <span>मावळा प्रतिष्ठान · कोठारा</span>
+      </a>
+      <nav class="navlinks">
+        <a href="#about">आम्ही कोण?</a>
+        <a href="#events">कार्यक्रम</a>
+        <a href="#gallery">फोटो</a>
+        <a href="#donate">वर्गणी/सहयोग</a>
+        <a href="#contact">संपर्क</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container grid">
+      <section>
+        <h1 class="title">समाजासाठी, संस्कृतीसाठी आणि <span style="background:linear-gradient(90deg,var(--brand),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent">एकतेसाठी</span> काम करणारे मंडळ</h1>
+        <p class="subtitle">मावळा प्रतिष्ठान, कोठारा — आपल्या गावाच्या प्रगतीसाठी सातत्याने उपक्रम राबवणारी तरुणांची टीम. गणेशोत्सव, स्वच्छता मोहिम, वृक्षारोपण, रक्तदान शिबीर आणि शैक्षणिक मदत ह्या आमच्या प्रमुख कृती.</p>
+        <div class="cta">
+          <a class="btn brand" href="#donate">वर्गणी द्या / सहकार्य करा</a>
+          <a class="btn" href="https://instagram.com/mavala_pratishthan_kothara_" target="_blank" rel="noopener">Instagram पाहा</a>
+        </div>
+        <div class="muted" style="margin-top:10px">Insta: @mavala_pratishthan_kothara_</div>
+      </section>
+      <aside class="card">
+        
+        <div style="height:260px; border-radius:16px; display:grid; place-items:center; background:radial-gradient(500px 200px at 100% 0%, rgba(255,183,3,.18), transparent 60%), linear-gradient(135deg, #1a1b21, #14151a); border:1px dashed rgba(255,255,255,.1)">
+          <div style="text-align:center">
+            <img src="logo.jpg" alt="logo" class="logo2">
+            <div style="font-weight:800; margin-top:20px">मावळा प्रतिष्ठान</div>
+            
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>आम्ही कोण?</h2>
+      <p class="lead">गावातील तरुणांनी स्थापन केलेले हे मंडळ सामाजिक, सांस्कृतिक आणि शैक्षणिक क्षेत्रात सकारात्मक बदल घडवण्याच्या ध्येयाने कार्य करते. पारदर्शकता, सहभाग आणि शिस्त ही आमची मूलभूत मूल्ये.</p>
+      <div class="features" style="margin-top:16px">
+        <div class="feat">
+          <div>💡</div>
+          <h3>समाजकार्य</h3>
+          <p class="muted">स्वच्छता मोहिम, रक्तदान, आरोग्य शिबिरे, आपत्ती मदत.</p>
+        </div>
+        <div class="feat">
+          <div>🕉️</div>
+          <h3>संस्कृती</h3>
+          <p class="muted">गणेशोत्सव, भजन, इतिहास जपणारे कार्यक्रम.</p>
+        </div>
+        <div class="feat">
+          <div>🌱</div>
+          <h3>पर्यावरण</h3>
+          <p class="muted">वृक्षारोपण, प्लास्टिक मुक्त मोहिम, जागरूकता.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <div class="container">
+      <h2>येत्या कार्यक्रमांची झलक</h2>
+      <div class="events" style="margin-top:14px">
+        <div class="event card">
+          <div class="img">गणेशोत्सव २०२५</div>
+          <div style="margin-top:10px" class="muted">भक्ती, सेवा आणि सुव्यवस्थेसह साजरा करूया.</div>
+        </div>
+        <div class="event card">
+          <div class="img">रक्तदान शिबीर</div>
+          <div style="margin-top:10px" class="muted">तारीख लवकरच जाहीर होईल. सहभागी व्हा.</div>
+        </div>
+        <div class="event card">
+          <div class="img">वृक्षारोपण</div>
+          <div style="margin-top:10px" class="muted">गाव हरित बनवूया — प्रत्येकाच्या हातून एक झाड.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>फोटो गॅलरी</h2>
+      <p class="muted">खाली placeholders आहेत — आपल्या कार्यक्रमांचे फोटो येथे जोडा.</p>
+      <div class="gallery" style="margin-top:12px">
+       <img src="1.jpg"  class="ph">
+         <img src="2.jpg"  class="ph">
+         <img src="3.jpg"  class="ph">
+         <img src="4.jpg"  class="ph">
+          <img src="5.jpg"  class="ph">
+           <img src="6.jpg"  class="ph">
+            <img src="7.jpg"  class="ph">
+             <img src="vaibhav.jpeg"  class="ph">
+      </div>
+    </div>
+  </section>
+
+  <section id="donate" class="section">
+    <div class="container donate">
+      <div class="box">
+        <h2>वर्गणी / सहकार्य</h2>
+        <p class="lead">आपल्या छोट्याशा सहकार्याने गावासाठी मोठं काम घडू शकतं. पारदर्शक हिशोब, पावती आणि अपडेट्स देण्याची हमी.</p>
+        <ul class="muted">
+          <li>✔️ ऑनलाइन पेमेंट: UPI / QR (खाली तपशील जोडा)</li>
+          <li>✔️ कॅश पावती — अधिकृत पावती बुक</li>
+          <li>✔️ वार्षिक अहवाल व सामाजिक माध्यमांवर अपडेट्स</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3 style="margin-top:0">पेमेंट तपशील</h3>
+        <p class="muted">खाली स्वतःचे तपशील बदला:</p>
+        <p><strong>UPI:</strong> <span class="muted">mavla@okbank</span></p>
+        <p><strong>बँक:</strong> <span class="muted">Mavla Pratishtan Kothara — 1234567890 — IFSC: ABCD0123456</span></p>
+        <code>इथे QR</code>
+         <img src="qr.jpg"  class="ph">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container card">
+      <h2>संपर्क</h2>
+      <p class="lead">इंस्टाग्रामवर आम्हाला फॉलो करा आणि संदेश पाठवा. स्वयंसेवक होण्यासाठी DM करा.</p>
+      <div class="socials" style="margin-top:8px">
+        <a class="chip" href="https://instagram.com/mavala_pratishthan_kothara_" target="_blank" rel="noopener">📷 Instagram: @mavala_pratishthan_kothara_</a>
+        <span class="chip">📞 मोबाईल: 9730764956</span>
+        <span class="chip">📍 कोठारा, महाराष्ट्र</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
+      <div>© <span id="y"></span> मावळा प्रतिष्ठान, कोठारा</div>
+      <div class="muted">वेबसाईट डिझाईन: Vaibs ✦ Fast • Classy</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
